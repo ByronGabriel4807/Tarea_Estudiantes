@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+<body>
+    <p id="parrafo1">Este es mi primer parrafo</p>
+    <p>Este es el segundo parrafo</p>
+
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        p {
+            color: red;
+            font-size: 20px;
+        }
+        #parrafo1 {
+            color: green;
+            font-size: 25px;
+        }
+        #parrafo1:hover {
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.getElementById("parrafo1").innerHTML = "Parrafo cambiado";
+    </script>
+</body>
+</html>

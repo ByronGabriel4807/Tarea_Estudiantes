@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+    <button id="Boton">Boton</button>
+    <p id="texto">pasa el raton sobre mi</p>
+    <input type="text" id="muInput">
+
+</body>
+<script>
+    document.getElementById("Boton").addEventListener("click", function(){
+        alert("jhon weko");
+    });
+    document.getElementById("texto").addEventListener("mouseover", function(){
+        this.style.color = "red";
+    });
+    document.getElementById("miInput").addEventListener("keydown", function(event){
+        alert("tecla presionada: " + event.key);
+    });
+</script>
+</html>

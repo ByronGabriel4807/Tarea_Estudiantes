@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="menuDesplegable">
+        <option value="HOMO">opcion 1</option>
+        <option value="HETERO">opcion 2</option>
+        <option value="PANSEXUAL">opcion 3</option>
+        <option value="FICHA">opcion 4</option>
+    </select>
+    <style>
+        #menuDesplegable {
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid blue;
+        }
+        #menuDesplegable:hover {
+            border-color: green;
+        }
+        #menuDesplegable:focus {
+            border-color: red;
+        }
+    </style>
+    <script>
+        const menuDesplegable = document.getElementById("menuDesplegable");
+
+        menuDesplegable.addEventListener("change", function() {
+            const valorSeleccionado = menuDesplegable.value;
+            alert("ERES " + valorSeleccionado);
+        });
+    </script>
+</body>
+</html>

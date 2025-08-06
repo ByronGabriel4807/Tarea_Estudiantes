@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="campoTexto" placeholder="Escribi">
+    <style>
+        #campoTexto {
+            border: 2px solid blue;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        #campoTexto:focus {
+            border-color: red;
+        }
+        #campoTexto:hover {
+            border-color: green;
+        }
+    </style>
+    <script>
+        const campoTexto = document.getElementById("campoTexto");
+
+        campoTexto.addEventListener("focus", function() {
+            campoTexto.style.borderColor = "red";
+        });
+
+        campoTexto.addEventListener("blur", function() {
+            campoTexto.style.borderColor = "blue";
+        });
+
+        campoTexto.addEventListener("mouseover", function() {
+            campoTexto.style.borderColor = "green";
+        });
+
+        campoTexto.addEventListener("mouseout", function() {
+            campoTexto.style.borderColor = "blue";
+        });
+    </script>
+</body>
+</html>
